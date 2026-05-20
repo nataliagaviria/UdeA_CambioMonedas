@@ -482,7 +482,7 @@ SELECT
 FROM CambioMoneda c
 JOIN Moneda m ON m.Id = c.IdMoneda
 WHERE m.Sigla = 'EUR'
-  AND c.Fecha BETWEEN '2026-03-01' AND '2026-03-31'
+  AND c.Fecha BETWEEN '2026-03-01' AND '2026-04-30'
 GROUP BY DATE_TRUNC('week', c.Fecha)
 ORDER BY semana_inicio;
 
